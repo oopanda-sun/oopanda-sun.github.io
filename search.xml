@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Pycharm报错 Environment location directory is not empty解决</title>
+    <url>/idea/error/pycharm/01_Environment-location-directory-is-not-empty%E9%94%99%E8%AF%AF.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>错误记录</category>
+      </categories>
+      <tags>
+        <tag>Idea使用问题</tag>
+        <tag>Pycharm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Intellij idea 2019.3激活教程</title>
-    <url>/posts/9d627eef/</url>
+    <url>/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html</url>
     <content><![CDATA[<p>2019年开始Jetbrains对旗下产品进行了一次升级,之前激活码激活Intellij idea的方式都不能使用了.本文以 <a href="https://download.jetbrains.com/idea/ideaIU-2019.3.5.exe?_ga=2.209285586.1795243078.1605170605-1922567665.1600847694">Intellij idea 2019.3</a>为例,讲解一下Intellij idea的激活.以下方法对Jetbrains旗下其他产品,如Webstorm,PyCharm等同样适用.</p>
 <h2 id="下载破解插件"><a href="#下载破解插件" class="headerlink" title="下载破解插件"></a>下载破解插件</h2><p>下载jetbrains-agent.jar破解插件,<a href="https://pan.baidu.com/s/1XMw2cUR5dMHscCqL42hexQ">百度云盘</a>提取码：syfq.下载完成后,将插件放入自己容易找到没有中文字符的文件夹下面(建议放入idea的bin目录下),复制路径.</p>
 <h2 id="配置插件"><a href="#配置插件" class="headerlink" title="配置插件"></a>配置插件</h2><h3 id="在Idea右上角点击-Help-gt-Edit-Custom-VM-Options"><a href="#在Idea右上角点击-Help-gt-Edit-Custom-VM-Options" class="headerlink" title="在Idea右上角点击 Help-&gt;Edit Custom VM Options."></a>在Idea右上角点击 Help-&gt;Edit Custom VM Options.</h3><p> <img src="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/01.png" alt="选择Edit Custom VM Options"></p>
@@ -15,9 +27,9 @@
         <category>IDEA</category>
       </categories>
       <tags>
+        <tag>Pycharm</tag>
         <tag>WebStorm</tag>
         <tag>Intellij idea</tag>
-        <tag>Pycharm</tag>
       </tags>
   </entry>
 </search>
