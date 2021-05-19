@@ -56,7 +56,7 @@
 <p>  <font color=#ff0000>4,不能创建泛型数组</font><br>  <img src="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/java/01/08.png" alt="step8"></p>
 <h2 id="虚拟机中泛型的实现-类型擦除"><a href="#虚拟机中泛型的实现-类型擦除" class="headerlink" title="虚拟机中泛型的实现-类型擦除"></a>虚拟机中泛型的实现-类型擦除</h2><p>&emsp;&emsp;Java泛型是在Java1.5以后才出现的,在Java早期版本中并没有泛型概念,为了向下兼容,Java泛型只存在在编译期,在编译后,就会替换成原生类型,并在相应的地方插入强制转换类型的代码,因此对于运行期的Java语言来说,ArrayList<Int>和ArrayList<String>就是一个类,这种编译后去除类型信息的方式就叫做类型擦除.</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Class c1 = <span class="keyword">new</span> ArrayList&lt;String&gt;().getClass();</span><br><span class="line">        Class c2 = <span class="keyword">new</span> ArrayList&lt;Integer&gt;().getClass();</span><br><span class="line">        System.out.println(c1==c2);</span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;泛型参数会擦除到他的第一个边界,如果参数类型是单独的一个T,那么最终会擦除到Object,相当于所有使用T的地方都会被Object替换,对于虚拟机来说,最终保存的参数类型还是Object.之所以还可以取出来我们传入的参数类型,是因为编译器在编译生成字节码的过程中,插入了类型转换的代码..</p>
+<p>&emsp;&emsp;泛型参数会擦除到他的第一个边界,如果参数类型是单独的一个T,那么最终会擦除到Object,相当于所有使用T的地方都会被Object替换,对于虚拟机来说,最终保存的参数类型还是Object.之所以还可以取出来我们传入的参数类型,是因为编译器在编译生成字节码的过程中,插入了类型转换的代码.</p>
 ]]></content>
       <categories>
         <category>Java</category>
