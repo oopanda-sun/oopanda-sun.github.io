@@ -4,7 +4,14 @@
   <url>
     <loc>https://oopanda.cn/java/01_%E8%AF%B4%E8%AF%B4Java%E6%B3%9B%E5%9E%8B.html</loc>
     
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://oopanda.cn/java/02_Java%E5%8F%8D%E5%B0%84.html</loc>
+    
+    <lastmod>2020-12-16</lastmod>
     
   </url>
   
@@ -60,7 +67,7 @@
 
   <url>
     <loc>https://oopanda.cn/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,42 +75,49 @@
   
   <url>
     <loc>https://oopanda.cn/tags/Java/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/tags/%E6%B3%9B%E5%9E%8B/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://oopanda.cn/tags/%E5%8F%8D%E5%B0%84/</loc>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/tags/WebStorm/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/tags/Intellij-idea/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/tags/Pycharm/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/tags/Idea%E4%BD%BF%E7%94%A8%E9%97%AE%E9%A2%98/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -112,21 +126,21 @@
   
   <url>
     <loc>https://oopanda.cn/categories/Java/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/categories/IDEA/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://oopanda.cn/categories/%E9%94%99%E8%AF%AF%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2020-12-14</lastmod>
+    <lastmod>2021-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
