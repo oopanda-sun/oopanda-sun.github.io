@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="WebStorm,Intellij idea,Pycharm," />
+  <meta name="keywords" content="Flutter,状态管理," />
 
 
 
@@ -86,25 +86,19 @@
 
 
 
-<meta name="description" content="&amp;emsp;&amp;emsp;2019年开始Jetbrains对旗下产品进行了一次升级,之前激活码激活Intellij idea的方式都不能使用了.本文以 Intellij idea 2019.3为例,讲解一下Intellij idea的激活.以下方法对Jetbrains旗下其他产品,如Webstorm,PyCharm等同样适用. 下载破解插件&amp;emsp;&amp;emsp;下载jetbrains-agent.">
+<meta name="description" content="&amp;emsp;&amp;emsp;所有程序里界面和数据的交互都至关重要，直接决定了整个程序的结构，选好状态管理方案的重要性就不言而喻了。我以为状态管理分为两类.  一,Dart 和 Flutter 内置支持setState123setState(()&amp;#123;   _model &#x3D; model; &amp;#125;); &#x2F;&#x2F; mounted &amp;emsp;&amp;emsp;最重要的方式 setState，支持规模较小的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Intellij idea 2019.3激活教程">
-<meta property="og:url" content="https://oopanda.cn/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html">
+<meta property="og:title" content="Flutter的八种状态管理">
+<meta property="og:url" content="https://oopanda.cn/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html">
 <meta property="og:site_name" content="oopanda">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;2019年开始Jetbrains对旗下产品进行了一次升级,之前激活码激活Intellij idea的方式都不能使用了.本文以 Intellij idea 2019.3为例,讲解一下Intellij idea的激活.以下方法对Jetbrains旗下其他产品,如Webstorm,PyCharm等同样适用. 下载破解插件&amp;emsp;&amp;emsp;下载jetbrains-agent.">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;所有程序里界面和数据的交互都至关重要，直接决定了整个程序的结构，选好状态管理方案的重要性就不言而喻了。我以为状态管理分为两类.  一,Dart 和 Flutter 内置支持setState123setState(()&amp;#123;   _model &#x3D; model; &amp;#125;); &#x2F;&#x2F; mounted &amp;emsp;&amp;emsp;最重要的方式 setState，支持规模较小的">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/01.png">
-<meta property="og:image" content="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/02.png">
-<meta property="og:image" content="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/03.png">
-<meta property="og:image" content="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/04.png">
-<meta property="article:published_time" content="2019-04-19T14:13:05.000Z">
-<meta property="article:modified_time" content="2020-11-16T05:13:14.694Z">
+<meta property="article:published_time" content="2021-05-20T02:30:25.000Z">
+<meta property="article:modified_time" content="2021-05-20T03:29:37.804Z">
 <meta property="article:author" content="oopanda">
-<meta property="article:tag" content="WebStorm">
-<meta property="article:tag" content="Intellij idea">
-<meta property="article:tag" content="Pycharm">
+<meta property="article:tag" content="Flutter">
+<meta property="article:tag" content="状态管理">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/01.png">
 
 
 
@@ -134,14 +128,14 @@
 
 
 
-  <link rel="canonical" href="https://oopanda.cn/skill/01_Intellij idea2019.3破解.html"/>
+  <link rel="canonical" href="https://oopanda.cn/flutter/01_flutter的状态管理.html"/>
 
 
 
 
 <script data-ad-client="ca-pub-9224233515711708" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-  <title>Intellij idea 2019.3激活教程 | oopanda</title>
+  <title>Flutter的八种状态管理 | oopanda</title>
   
 
 
@@ -303,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://oopanda.cn/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html">
+    <link itemprop="mainEntityOfPage" href="https://oopanda.cn/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -321,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Intellij idea 2019.3激活教程</h1>
+          <h1 class="post-title" itemprop="name headline">Flutter的八种状态管理</h1>
         
 
         <div class="post-meta">
@@ -333,8 +327,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-19T22:13:05+08:00">
-                2019-04-19
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-05-20T10:30:25+08:00">
+                2021-05-20
               </time>
             
 
@@ -356,8 +350,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/IDEA/" itemprop="url" rel="index">
-                    <span itemprop="name">IDEA</span>
+                  <a href="/categories/Flutter/" itemprop="url" rel="index">
+                    <span itemprop="name">Flutter</span>
                   </a>
                 </span>
 
@@ -374,8 +368,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html" itemprop="commentCount"></span>
+                <a href="/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -402,7 +396,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  9.2k
+                  11k
                 </span>
               
 
@@ -418,7 +412,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  8 mins.
+                  10 mins.
                 </span>
               
             </div>
@@ -439,14 +433,27 @@
       
 
       
-        <p>&emsp;&emsp;2019年开始Jetbrains对旗下产品进行了一次升级,之前激活码激活Intellij idea的方式都不能使用了.本文以 <a target="_blank" rel="noopener" href="https://download.jetbrains.com/idea/ideaIU-2019.3.5.exe?_ga=2.209285586.1795243078.1605170605-1922567665.1600847694">Intellij idea 2019.3</a>为例,讲解一下Intellij idea的激活.以下方法对Jetbrains旗下其他产品,如Webstorm,PyCharm等同样适用.</p>
-<h2 id="下载破解插件"><a href="#下载破解插件" class="headerlink" title="下载破解插件"></a>下载破解插件</h2><p>&emsp;&emsp;下载jetbrains-agent.jar破解插件,<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1XMw2cUR5dMHscCqL42hexQ">百度云盘</a>提取码：syfq.下载完成后,将插件放入自己容易找到没有中文字符的文件夹下面(建议放入idea的bin目录下),复制路径.</p>
-<h2 id="配置插件"><a href="#配置插件" class="headerlink" title="配置插件"></a>配置插件</h2><h3 id="在Idea右上角点击-Help-gt-Edit-Custom-VM-Options"><a href="#在Idea右上角点击-Help-gt-Edit-Custom-VM-Options" class="headerlink" title="在Idea右上角点击 Help-&gt;Edit Custom VM Options."></a>在Idea右上角点击 Help-&gt;Edit Custom VM Options.</h3><p> <img src="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/01.png" alt="选择Edit Custom VM Options"></p>
-<h3 id="打开idea64-exe-vmoptions文件-最后一行增加-javaagent"><a href="#打开idea64-exe-vmoptions文件-最后一行增加-javaagent" class="headerlink" title="打开idea64.exe.vmoptions文件,最后一行增加-javaagent:"></a>打开idea64.exe.vmoptions文件,最后一行增加-javaagent:</h3><p> <img src="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/02.png" alt="idea64.exe.vmoptions文件"><br>&emsp;&emsp;填写-javaagent:式例<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-javaagent:C:\********************\jetbrains-agent.jar </span><br></pre></td></tr></table></figure></p>
-<h2 id="填写激活码"><a href="#填写激活码" class="headerlink" title="填写激活码"></a>填写激活码</h2><h3 id="在Idea右上角点击-Help-gt-Register-选择Activation-Code"><a href="#在Idea右上角点击-Help-gt-Register-选择Activation-Code" class="headerlink" title="在Idea右上角点击 Help-&gt;Register,选择Activation Code"></a>在Idea右上角点击 Help-&gt;Register,选择Activation Code</h3><p> <img src="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/03.png" alt="打开Register框"><br> <img src="https://blog-1300139959.cos.ap-shanghai.myqcloud.com/04.png" alt="填写Activation Code"></p>
-<h3 id="填写激活码-1"><a href="#填写激活码-1" class="headerlink" title="填写激活码"></a>填写激活码</h3><p>有限期:2089年<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">520E5894E2-eyJsaWNlbnNlSWQiOiI1MjBFNTg5NEUyIiwibGljZW5zZWVOYW1lIjoicGlnNiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJVbmxpbWl0ZWQgbGljZW5zZSB0aWxsIGVuZCBvZiB0aGUgY2VudHVyeS4iLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlMwIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSRCIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJNIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In1dLCJoYXNoIjoiODkwNzA3MC8wIiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-DZ&#x2F;oNHBfyho0XrrCJJvAOKg5Q1tLBgOdbCmzCKwkuM+Yryce0RoOi3OOmH6Ba&#x2F;uTcCh&#x2F;L37meyD0FJdJIprv59y4+n+k2kIeF&#x2F;XKrKqg0dEsDUQRw0lUqqMt99ohqa+zmbJ44Yufdwwx&#x2F;F1CtoRGvEQ2Mn0QjuqRoZJZ3wiT5Am22JiJW8MaNUl3wg9YPj+OPGARKKJUdUJ0NGUDQBcBAv5ds8LhbSbJSbPkbkwH&#x2F;a1QMz4nEdn6lRDKI1aFIn43QhBSCFqvUq6TPJlbIJ0ZjE+PyZjHFBKCgkry0DHPXU2BbtIZPsksQnN3fx240a9K6sN7peZnLpEoMoq23FEz4g&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG&#x2F;PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg&#x2F;nYV31HLF7fJUAplI&#x2F;1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4&#x2F;G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd&#x2F;GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt&#x2F;wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59&#x2F;THOT7NJQhr6AyLkhhJCdkzE2cob&#x2F;KouVp4ivV7Q3Fc6HX7eepHAAF&#x2F;DpxwgOrg9smX6coXLgfp0b1RU2u&#x2F;tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB&#x2F;40BjpMUrDRCeKuiBahC0DCoU&#x2F;4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV&#x2F;g&#x3D;&#x3D;</span><br></pre></td></tr></table></figure><br>有限期:2089年</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">N757JE0KCT-eyJsaWNlbnNlSWQiOiJONzU3SkUwS0NUIiwibGljZW5zZWVOYW1lIjoid3UgYW5qdW4iLCJhc3NpZ25lZU5hbWUiOiIiLCJhc3NpZ25lZUVtYWlsIjoiIiwibGljZW5zZVJlc3RyaWN0aW9uIjoiRm9yIGVkdWNhdGlvbmFsIHVzZSBvbmx5IiwiY2hlY2tDb25jdXJyZW50VXNlIjpmYWxzZSwicHJvZHVjdHMiOlt7ImNvZGUiOiJJSSIsInBhaWRVcFRvIjoiMjAyMC0wMS0wNyJ9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA3In0seyJjb2RlIjoiRFBOIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA3In0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDcifSx7ImNvZGUiOiJHTyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wNyJ9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA3In0seyJjb2RlIjoiQ0wiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDcifSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDcifSx7ImNvZGUiOiJSQyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wNyJ9LHsiY29kZSI6IlJEIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA3In0seyJjb2RlIjoiUEMiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDcifSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAyMC0wMS0wNyJ9LHsiY29kZSI6IldTIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA3In0seyJjb2RlIjoiREIiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDcifSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wNyJ9LHsiY29kZSI6IlJTVSIsInBhaWRVcFRvIjoiMjAyMC0wMS0wNyJ9XSwiaGFzaCI6IjExNTE5OTc4LzAiLCJncmFjZVBlcmlvZERheXMiOjAsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0&#x3D;-AE3x5sRpDellY4SmQVy2Pfc2IT7y1JjZFmDA5JtOv4K5gwVdJOLw5YGiOskZTuGu6JhOi50nnd0WaaNZIuVVVx3T5MlXrAuO3kb2qPtLtQ6&#x2F;n3lp4fIv+6384D4ciEyRWijG7NA9exQx39Tjk7&#x2F;xqaGk7ooKgq5yquIfIA+r4jlbW8j9gas1qy3uTGUuZQiPB4lv3P5OIpZzIoWXnFwWhy7s&#x2F;&#x2F;mjOWRZdf&#x2F;Du3RP518tMk74wizbTeDn84qxbM+giNAn+ovKQRMYHtLyxntBiP5ByzfAA9Baa5TUGW5wDiZrxFuvBAWTbLrRI0Kd7Nb&#x2F;tB9n1V9uluB2WWIm7iMxDg&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO&#x2F;5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij&#x2F;78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB&#x2F;xVy&#x2F;VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE&#x2F;EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn&#x2F;72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN&#x2F;lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D&#x2F;cXmgpOyW&#x2F;1SmBz3XjVIi&#x2F;zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV&#x2F;bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit&#x2F;pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow&#x3D;&#x3D;</span><br></pre></td></tr></table></figure>
-<h3 id="重启Idea"><a href="#重启Idea" class="headerlink" title="重启Idea"></a>重启Idea</h3>
+        <p>&emsp;&emsp;所有程序里界面和数据的交互都至关重要，直接决定了整个程序的结构，选好状态管理方案的重要性就不言而喻了。我以为状态管理分为两类.</p>
+<hr>
+<h2 id="一-Dart-和-Flutter-内置支持"><a href="#一-Dart-和-Flutter-内置支持" class="headerlink" title="一,Dart 和 Flutter 内置支持"></a>一,Dart 和 Flutter 内置支持</h2><h3 id="setState"><a href="#setState" class="headerlink" title="setState"></a><font color=#ff6633>setState</font></h3><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setState(()&#123; </span><br><span class="line">  _model = model; </span><br><span class="line">&#125;); <span class="comment">// mounted</span></span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;最重要的方式 setState，支持规模较小的程序足够了，所有其它方式最终都需要调用 setState。</p>
+<h3 id="方法回调-Function-callback"><a href="#方法回调-Function-callback" class="headerlink" title="(方法回调)Function callback"></a><font color=#ff6633>(方法回调)Function callback</font></h3><p>&emsp;&emsp;Dart Function 足够灵活，还支持模版参数。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> FooChanged = <span class="keyword">void</span> <span class="built_in">Function</span>(<span class="built_in">int</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> ValueChanged&lt;T&gt; = <span class="keyword">void</span> <span class="built_in">Function</span>(T value);</span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;单向变更通知，可以和ObserverList结合支持多个订阅者。<br>Flutter 内置 ChangeNotifier, ValueNotifier 都可以认为是类似方案。</p>
+<h3 id="Delegate"><a href="#Delegate" class="headerlink" title="Delegate"></a><font color=#ff6633>Delegate</font></h3><p>&emsp;&emsp;可以认为是多个回调函数，其他语言里都有类似模式，名称似乎来源于 Objective-C。实际例子.</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">SpiderDelegate</span> </span>&#123;</span><br><span class="line">  <span class="comment">/// <span class="markdown">category is null, crawl book whole site</span></span></span><br><span class="line">  <span class="comment">/// <span class="markdown">category not null, crawl book under the category</span></span></span><br><span class="line">  <span class="keyword">void</span> onBook(Book book, &#123;Site site, Category category&#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">void</span> onChapter(Book book, Chapter chapter);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Sigslot"><a href="#Sigslot" class="headerlink" title="Sigslot"></a><font color=#ff6633>Sigslot</font></h3><p>&emsp;&emsp;源自 Qt 里的经典编程模式，Dart 可以轻易实现。这种方式在 Flutter 里可能根本不会有太多应用，但是由于 Sigslot 在 C++ 领域具有举足轻重的地位，属于界面数据和逻辑解耦合的王者，boost::signal(2)就是明证，在这里列出纯属凑数(本人也实现了一个).</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> ValueCallback&lt;E&gt; = <span class="keyword">void</span> <span class="built_in">Function</span>(E value);</span><br><span class="line"></span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Signable</span>&lt;<span class="title">E</span>&gt; </span>&#123;</span><br><span class="line">  <span class="comment">// Signable&lt;bool&gt; someValue;</span></span><br><span class="line">  <span class="comment">/// <span class="markdown">Register a closure to be called when the object notifies its listeners.</span></span></span><br><span class="line">  <span class="keyword">void</span> connect(ValueCallback&lt;E&gt; listener);</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="markdown">Remove a previously registered closure from the list of closures that the</span></span></span><br><span class="line">  <span class="comment">/// <span class="markdown">object notifies.</span></span></span><br><span class="line">  <span class="keyword">void</span> disconnect(ValueCallback&lt;E&gt; listener);</span><br><span class="line"></span><br><span class="line">  <span class="comment">/// <span class="markdown">sink value changed</span></span></span><br><span class="line">  <span class="keyword">void</span> emit(E value);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用方法类似</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Signal&lt;<span class="built_in">String</span>&gt; signalString;</span><br><span class="line"></span><br><span class="line">signalString.connect((<span class="built_in">String</span> str) &#123;</span><br><span class="line">  <span class="comment">// got the `str` changed here</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="二-包-外部实现"><a href="#二-包-外部实现" class="headerlink" title="二 ,包-外部实现"></a>二 ,包-外部实现</h2><h3 id="pkg-scoped-model"><a href="#pkg-scoped-model" class="headerlink" title="pkg:scoped_model"></a><font color=#ff6633>pkg:scoped_model</font></h3><p>&emsp;&emsp;个人以为是最佳方案，源自 Fuchsia 代码，在其中广泛使用，设置程序几乎都是这个模式，后来独立为 package，包括注释也只有 287 行代码。由于 Fuchsia App 结构都是后台Service+前台UI，这个方案绝对是最合适的方案。使用 InheritedWidget 实现，性能不可能更好.<br>&emsp;&emsp;例子太多，Flutter 官方 samples 里也有链接.</p>
+<h3 id="pkg-provide"><a href="#pkg-provide" class="headerlink" title="pkg:provide"></a><font color=#ff6633>pkg:provide</font></h3><p>&emsp;&emsp;出自 Flutter dev team，绝对的官方了，总共代码 675行。实现方式和 scoped_model 类似，增加 Providers，Provider 支持 Stream.</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> Column(children: [</span><br><span class="line">      <span class="comment">// Simplest way to retrieve the provided value.</span></span><br><span class="line">      <span class="comment">//</span></span><br><span class="line">      <span class="comment">// Each time the counter changes, this will get rebuilt. This widget</span></span><br><span class="line">      <span class="comment">// requires the value to be a Listenable or a Stream. Otherwise</span></span><br><span class="line">      Provide&lt;Counter&gt;(</span><br><span class="line">        builder: (context, child, counter) =&gt; Text(<span class="string">&#x27;<span class="subst">$&#123;counter.value&#125;</span>&#x27;</span>),</span><br><span class="line">      ),</span><br><span class="line"></span><br><span class="line">      <span class="comment">// This widget gets the counter as a stream of changes.</span></span><br><span class="line">      <span class="comment">// The stream is filtered so that this only rebuilds on even numbers.</span></span><br><span class="line">      StreamBuilder&lt;Counter&gt;(</span><br><span class="line">          initialData: currentCounter,</span><br><span class="line">          stream: Provide.stream&lt;Counter&gt;(context)</span><br><span class="line">              .where((counter) =&gt; counter.value % <span class="number">2</span> == <span class="number">0</span>),</span><br><span class="line">          builder: (context, snapshot) =&gt;</span><br><span class="line">              Text(<span class="string">&#x27;Last even value: <span class="subst">$&#123;snapshot.data.value&#125;</span>&#x27;</span>)),</span><br><span class="line"></span><br><span class="line">      <span class="comment">// This button just needs to call a method on Counter. No need to rebuild</span></span><br><span class="line">      <span class="comment">// it as the value of Counter changes. Therefore, we can use the value of</span></span><br><span class="line">      <span class="comment">// `Provide.value&lt;Counter&gt;` from above.</span></span><br><span class="line">      FlatButton(child: Text(<span class="string">&#x27;increment&#x27;</span>), onPressed: currentCounter.increment),</span><br><span class="line"></span><br><span class="line">      Text(<span class="string">&#x27;Another widget that does not depend on the Counter&#x27;</span>),</span><br><span class="line">    ]);</span><br></pre></td></tr></table></figure>
+<h3 id="flutter-provide"><a href="#flutter-provide" class="headerlink" title="flutter-provide"></a><font color=#ff6633>flutter-provide</font></h3><p>&emsp;&emsp;可以认为这个比 provide 更早，功能更丰富，实现依然是 InheritedWidget。可能不会有太广泛使用，但是在时间上有历史意义，故列出.</p>
+<h3 id="RxDart-Fish-Redux"><a href="#RxDart-Fish-Redux" class="headerlink" title="RxDart, Fish-Redux"></a><font color=#ff6633>RxDart, Fish-Redux</font></h3><p>&emsp;&emsp;看过以上各种实现后，我不知道还有什么理由一定要用 RxDart 之类重量级的实现。程序结构会被绑架，学习曲线也更高。不得不提 Bloc 是个另类，使用 RxDart 了，但是做到更简洁，对 Infinite List 等也有较好实现.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>&emsp;&emsp;就好像组合是使用最多的设计模式，函数回调、类回调可能就是小规模的App最佳状态管理。稍微规模程序，数据和界面都应该分层(类似 Fuchsia App)，最佳方案可能就是 scoped_model.</p>
+
       
     </div>
     
@@ -502,7 +509,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://oopanda.cn/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html" title="Intellij idea 2019.3激活教程">https://oopanda.cn/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html</a>
+    <a href="https://oopanda.cn/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html" title="Flutter的八种状态管理">https://oopanda.cn/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -517,11 +524,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/WebStorm/" rel="tag"># WebStorm</a>
+            <a href="/tags/Flutter/" rel="tag"># Flutter</a>
           
-            <a href="/tags/Intellij-idea/" rel="tag"># Intellij idea</a>
-          
-            <a href="/tags/Pycharm/" rel="tag"># Pycharm</a>
+            <a href="/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/" rel="tag"># 状态管理</a>
           
         </div>
       
@@ -549,15 +554,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/java/01_%E8%AF%B4%E8%AF%B4Java%E6%B3%9B%E5%9E%8B.html" rel="next" title="Java泛型总结">
+                <i class="fa fa-chevron-left"></i> Java泛型总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/idea/error/pycharm/01_Environment-location-directory-is-not-empty%E9%94%99%E8%AF%AF.html" rel="prev" title="Pycharm报错 Environment location directory is not empty解决">
-                Pycharm报错 Environment location directory is not empty解决 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -712,7 +717,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E7%A0%B4%E8%A7%A3%E6%8F%92%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">下载破解插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%8F%92%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">配置插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8Idea%E5%8F%B3%E4%B8%8A%E8%A7%92%E7%82%B9%E5%87%BB-Help-gt-Edit-Custom-VM-Options"><span class="nav-number">2.1.</span> <span class="nav-text">在Idea右上角点击 Help-&gt;Edit Custom VM Options.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%93%E5%BC%80idea64-exe-vmoptions%E6%96%87%E4%BB%B6-%E6%9C%80%E5%90%8E%E4%B8%80%E8%A1%8C%E5%A2%9E%E5%8A%A0-javaagent"><span class="nav-number">2.2.</span> <span class="nav-text">打开idea64.exe.vmoptions文件,最后一行增加-javaagent:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A1%AB%E5%86%99%E6%BF%80%E6%B4%BB%E7%A0%81"><span class="nav-number">3.</span> <span class="nav-text">填写激活码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9C%A8Idea%E5%8F%B3%E4%B8%8A%E8%A7%92%E7%82%B9%E5%87%BB-Help-gt-Register-%E9%80%89%E6%8B%A9Activation-Code"><span class="nav-number">3.1.</span> <span class="nav-text">在Idea右上角点击 Help-&gt;Register,选择Activation Code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A1%AB%E5%86%99%E6%BF%80%E6%B4%BB%E7%A0%81-1"><span class="nav-number">3.2.</span> <span class="nav-text">填写激活码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E5%90%AFIdea"><span class="nav-number">3.3.</span> <span class="nav-text">重启Idea</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-Dart-%E5%92%8C-Flutter-%E5%86%85%E7%BD%AE%E6%94%AF%E6%8C%81"><span class="nav-number">1.</span> <span class="nav-text">一,Dart 和 Flutter 内置支持</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#setState"><span class="nav-number">1.1.</span> <span class="nav-text">setState</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B9%E6%B3%95%E5%9B%9E%E8%B0%83-Function-callback"><span class="nav-number">1.2.</span> <span class="nav-text">(方法回调)Function callback</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Delegate"><span class="nav-number">1.3.</span> <span class="nav-text">Delegate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sigslot"><span class="nav-number">1.4.</span> <span class="nav-text">Sigslot</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E5%8C%85-%E5%A4%96%E9%83%A8%E5%AE%9E%E7%8E%B0"><span class="nav-number">2.</span> <span class="nav-text">二 ,包-外部实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pkg-scoped-model"><span class="nav-number">2.1.</span> <span class="nav-text">pkg:scoped_model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pkg-provide"><span class="nav-number">2.2.</span> <span class="nav-text">pkg:provide</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flutter-provide"><span class="nav-number">2.3.</span> <span class="nav-text">flutter-provide</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RxDart-Fish-Redux"><span class="nav-number">2.4.</span> <span class="nav-text">RxDart, Fish-Redux</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
@@ -733,6 +738,10 @@
       
       
         <li class="recent_posts_li">
+          <a href="/flutter/01_flutter%E7%9A%84%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.html" title="Flutter的八种状态管理" target="_blank">Flutter的八种状态管理</a>
+        </li>
+      
+        <li class="recent_posts_li">
           <a href="/java/01_%E8%AF%B4%E8%AF%B4Java%E6%B3%9B%E5%9E%8B.html" title="Java泛型总结" target="_blank">Java泛型总结</a>
         </li>
       
@@ -742,10 +751,6 @@
       
         <li class="recent_posts_li">
           <a href="/idea/error/pycharm/01_Environment-location-directory-is-not-empty%E9%94%99%E8%AF%AF.html" title="Pycharm报错 Environment location directory is not empty解决" target="_blank">Pycharm报错 Environment location directory is not empty解决</a>
-        </li>
-      
-        <li class="recent_posts_li">
-          <a href="/skill/01_Intellij%20idea2019.3%E7%A0%B4%E8%A7%A3.html" title="Intellij idea 2019.3激活教程" target="_blank">Intellij idea 2019.3激活教程</a>
         </li>
       
     </ul>
@@ -775,7 +780,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">14k</span>
+    <span title="Site words total count">10k</span>
   
 </div>
 
